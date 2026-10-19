@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: VM7 root7 natural non-main gate 261019
+    conditions:
+      - base = main
+      - head != main
+      - check-success = vm7-root7-natural-prevention-261019
+    actions:
+      merge:
+        method: squash
